@@ -60,6 +60,18 @@ function Contact() {
             <div className="info-item">
               <div className="info-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div className="info-text">
+                <h3>Phone</h3>
+                <p>+91 8218172376</p>
+              </div>
+            </div>
+
+            <div className="info-item">
+              <div className="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -67,7 +79,7 @@ function Contact() {
               <div className="info-text">
                 <h3>Location</h3>
                 <p>Graphic Era Hill University</p>
-                <p>Dehradun, India</p>
+                <p>Bhimtal, Uttarakhand, India</p>
               </div>
             </div>
 

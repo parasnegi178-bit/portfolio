@@ -12,7 +12,7 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p className="about-intro">
-              I'm a dedicated BCA student at Graphic Era Hill University with a passion for creating innovative digital solutions. My journey in computer science has equipped me with a strong foundation in programming and software development.
+              I'm a dedicated BCA student at Graphic Era Hill University, Bhimtal with a passion for creating innovative digital solutions. My journey in computer science has equipped me with a strong foundation in programming and software development.
             </p>
             <p className="about-detail">
               I enjoy tackling challenging problems and building applications that make a difference. Whether it's developing web applications, exploring new technologies, or collaborating on exciting projects, I'm always eager to learn and grow.
