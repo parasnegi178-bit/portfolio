@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 24px 0;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  padding: 16px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-links li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--primary);
+}
+
+.nav-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 24px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 80px 32px 32px;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+  }
+}
